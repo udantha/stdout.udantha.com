@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stdout.udantha.com/sitemap-index.xml
