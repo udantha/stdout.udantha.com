@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-37fxchfa> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>The Art of Asking: Why Software Architecture is Really About Communication · stdout</title><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="canonical" href="https://stdout.udantha.com/articles/art-of-asking/"><meta name="description" content="Strip away the technical jargon and software architecture comes down to one thing — simplifying the complex through better questions."><meta name="author" content="Udantha Pathirana"><!-- Open Graph --><meta property="og:title" content="The Art of Asking: Why Software Architecture is Really About Communication · stdout"><meta property="og:type" content="article"><meta property="og:url" content="https://stdout.udantha.com/articles/art-of-asking/"><meta property="og:site_name" content="stdout"><meta property="og:description" content="Strip away the technical jargon and software architecture comes down to one thing — simplifying the complex through better questions."><meta property="og:image" content="https://stdout.udantha.com/og.png"><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="The Art of Asking: Why Software Architecture is Really About Communication · stdout"><meta name="twitter:description" content="Strip away the technical jargon and software architecture comes down to one thing — simplifying the complex through better questions."><meta name="twitter:image" content="https://stdout.udantha.com/og.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"The Art of Asking: Why Software Architecture is Really About Communication","description":"Strip away the technical jargon and software architecture comes down to one thing — simplifying the complex through better questions.","datePublished":"2026-06-18T00:00:00.000Z","author":{"@type":"Person","name":"Udantha Pathirana","url":"https://udantha.com"},"publisher":{"@type":"Person","name":"Udantha Pathirana","url":"https://udantha.com"}}</script><!-- Consent Mode defaults (must run before GTM) --><script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      analytics_storage: 'granted',
+      ad_storage: 'granted',
+      ad_user_data: 'granted',
+      ad_personalization: 'granted',
+    });
+    var _cm = document.cookie.match('(^|;)\\s*gtm_consent=([^;]+)');
+    if (_cm && _cm[2] === 'denied') {
+      gtag('consent', 'update', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+      });
+    }
+  </script><!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-M58P6XMG');</script><!-- End Google Tag Manager --><link rel="stylesheet" href="/_astro/_slug_.Bh6Fd7Xh.css">
+<style>header[data-astro-cid-gjtny2mx]{margin-bottom:var(--space-lg);padding-bottom:var(--space-md);border-bottom:1px solid var(--color-border)}time[data-astro-cid-gjtny2mx]{display:block;font-family:var(--font-mono);font-size:.72rem;color:var(--color-muted);margin-bottom:1rem;letter-spacing:.04em}h1[data-astro-cid-gjtny2mx]{font-size:clamp(2rem,5vw,3.2rem);font-weight:700;letter-spacing:-.03em;line-height:1.1;margin-bottom:1.25rem}.description[data-astro-cid-gjtny2mx]{color:var(--color-muted);font-size:1.1rem;line-height:1.6;margin:0 0 var(--space-sm)}.tags[data-astro-cid-gjtny2mx]{display:flex;gap:var(--space-xs);flex-wrap:wrap;margin-top:var(--space-xs)}.tags[data-astro-cid-gjtny2mx] a[data-astro-cid-gjtny2mx]{font-family:var(--font-mono);font-size:.68rem;color:var(--color-muted)}.tags[data-astro-cid-gjtny2mx] a[data-astro-cid-gjtny2mx]:hover{color:var(--color-accent);text-decoration:none}.content[data-astro-cid-gjtny2mx]{font-size:1.15rem;line-height:1.85}.content[data-astro-cid-gjtny2mx] h2{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-top:var(--space-lg);margin-bottom:var(--space-sm)}.content[data-astro-cid-gjtny2mx] h3{font-size:1.2rem;font-weight:600;letter-spacing:-.01em;margin-top:var(--space-md);margin-bottom:var(--space-xs)}.content[data-astro-cid-gjtny2mx] img{margin-block:var(--space-md);width:100%;border-radius:6px}.comments[data-astro-cid-gjtny2mx]{margin-top:var(--space-lg);padding-top:var(--space-lg);border-top:1px solid var(--color-border)}
+</style></head> <body data-astro-cid-37fxchfa> <!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M58P6XMG" height="0" width="0" style="display:none;visibility:hidden" data-astro-cid-37fxchfa></iframe></noscript> <!-- End Google Tag Manager (noscript) --> <header data-astro-cid-37fxchfa> <nav data-astro-cid-37fxchfa> <a href="/" class="brand" data-astro-cid-37fxchfa><span class="prompt" data-astro-cid-37fxchfa>&gt;</span>&nbsp;stdout</a> <div class="nav-links" data-astro-cid-37fxchfa> <a href="/" data-astro-cid-37fxchfa>Posts</a> <a href="/about" data-astro-cid-37fxchfa>About</a> <a href="/tags" data-astro-cid-37fxchfa>Tags</a> </div> </nav> </header> <main data-astro-cid-37fxchfa>   <article class="prose" data-astro-cid-gjtny2mx> <header data-astro-cid-gjtny2mx> <time datetime="2026-06-18T00:00:00.000Z" data-astro-cid-gjtny2mx>18 June 2026</time> <h1 data-astro-cid-gjtny2mx>The Art of Asking: Why Software Architecture is Really About Communication</h1> <p class="description" data-astro-cid-gjtny2mx>Strip away the technical jargon and software architecture comes down to one thing — simplifying the complex through better questions.</p> <div class="tags" data-astro-cid-gjtny2mx> <a href="/tags/architecture/" data-astro-cid-gjtny2mx>#architecture</a><a href="/tags/communication/" data-astro-cid-gjtny2mx>#communication</a><a href="/tags/engineering/" data-astro-cid-gjtny2mx>#engineering</a> </div> </header> <div class="content" data-astro-cid-gjtny2mx> <p>When most people think of software architecture, they picture complex diagrams, intricate cloud configurations, or debates about microservices versus monoliths. But strip away the technical jargon and software architecture comes down to one thing: <strong>simplifying the complex through communication.</strong></p>
+<p>It is easy to get bogged down in the latest tech trends. But being an effective architect requires a specific cognitive shift in how you approach problems. It is not about having all the answers or holding the “right” opinions. It is about becoming genuinely good at asking the right questions.</p>
+<h2 id="architecture-as-a-dialogue">Architecture as a Dialogue</h2>
+<p>Think about your typical day. A developer might approach you with a specific technical hurdle, or a business stakeholder might come to you with a “must-have” new feature. Your job is not to immediately say “yes,” “no,” or “use this database.” Your job is to start a conversation.</p>
+<figure style="margin-block: 2.5rem;">
+<svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:700px;display:block;margin:0 auto;" role="img" aria-label="Architect as central communicator connecting developers, stakeholders, and users">
+  <!-- Background -->
+  <rect width="700" height="280" fill="#faf8f4" rx="8"></rect>
+  <!-- Center: Architect -->
+  <rect x="270" y="100" width="160" height="60" rx="8" fill="#d95f41" stroke="none"></rect>
+  <text x="350" y="127" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="13" font-weight="700" fill="#fff">Architect</text>
+  <text x="350" y="145" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="11" fill="rgba(255,255,255,0.85)">asks questions</text>
+  <!-- Left: Developer -->
+  <rect x="50" y="45" width="140" height="52" rx="8" fill="#f5f5f5" stroke="#e8e8e8" stroke-width="1.5"></rect>
+  <text x="120" y="68" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="12" font-weight="600" fill="#111">Developer</text>
+  <text x="120" y="85" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="11" fill="#888">technical hurdles</text>
+  <!-- Right: Stakeholder -->
+  <rect x="510" y="45" width="150" height="52" rx="8" fill="#f5f5f5" stroke="#e8e8e8" stroke-width="1.5"></rect>
+  <text x="585" y="68" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="12" font-weight="600" fill="#111">Stakeholder</text>
+  <text x="585" y="85" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="11" fill="#888">business needs</text>
+  <!-- Bottom: User -->
+  <rect x="270" y="210" width="160" height="52" rx="8" fill="#f5f5f5" stroke="#e8e8e8" stroke-width="1.5"></rect>
+  <text x="350" y="233" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="12" font-weight="600" fill="#111">End User</text>
+  <text x="350" y="250" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="11" fill="#888">real constraints</text>
+  <!-- Arrows: Architect <-> Developer -->
+  <line x1="270" y1="120" x2="192" y2="84" stroke="#d95f41" stroke-width="1.5" stroke-dasharray="4 3"></line>
+  <polygon points="192,84 200,78 198,89" fill="#d95f41"></polygon>
+  <!-- Arrows: Architect <-> Stakeholder -->
+  <line x1="430" y1="120" x2="510" y2="84" stroke="#d95f41" stroke-width="1.5" stroke-dasharray="4 3"></line>
+  <polygon points="510,84 502,78 504,89" fill="#d95f41"></polygon>
+  <!-- Arrows: Architect <-> User -->
+  <line x1="350" y1="160" x2="350" y2="210" stroke="#d95f41" stroke-width="1.5" stroke-dasharray="4 3"></line>
+  <polygon points="350,210 344,200 356,200" fill="#d95f41"></polygon>
+</svg>
+<figcaption style="text-align:center;font-size:0.82rem;color:#888;margin-top:0.75rem;font-style:italic;">The architect's role is not to hold answers — it is to connect conversations</figcaption>
+</figure>
+<p>Mastering the architecture mindset means moving away from just building and toward strategically evaluating every request. When a stakeholder pushes for a complex solution like integrating a massive Large Language Model, your role is to evaluate the pros and cons. You might ask questions that reveal a much simpler, more efficient path, such as using a “boring” but effective logistic regression model instead.</p>
+<blockquote>
+<p>By asking these questions, you simplify the problem for everyone involved. You help the business see the trade-offs between cost, speed, and complexity, and you help developers focus on the most effective solution rather than just the shiniest one.</p>
+</blockquote>
+<h2 id="the-architects-toolkit-three-essential-questions">The Architect’s Toolkit: Three Essential Questions</h2>
+<p>So how do you actually do this? It comes down to a specific set of questions that help you build more robust systems. While every project is different, three questions can guide almost any architectural decision:</p>
+<figure style="margin-block: 2.5rem;">
+<svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:700px;display:block;margin:0 auto;" role="img" aria-label="Three essential architectural questions: trade-offs, justification, and long-term alignment">
+  <!-- Card 1 -->
+  <rect x="20" y="20" width="200" height="160" rx="8" fill="#f5f5f5" stroke="#e8e8e8" stroke-width="1.5"></rect>
+  <rect x="20" y="20" width="200" height="6" rx="8" fill="#d95f41"></rect>
+  <text x="120" y="60" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="28" font-weight="700" fill="#d95f41">01</text>
+  <text x="120" y="90" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="13" font-weight="700" fill="#111">What are the</text>
+  <text x="120" y="108" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="13" font-weight="700" fill="#111">trade-offs?</text>
+  <text x="120" y="135" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="11" fill="#888">If we choose X,</text>
+  <text x="120" y="151" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="11" fill="#888">what do we give up?</text>
+  <!-- Card 2 -->
+  <rect x="250" y="20" width="200" height="160" rx="8" fill="#f5f5f5" stroke="#e8e8e8" stroke-width="1.5"></rect>
+  <rect x="250" y="20" width="200" height="6" rx="8" fill="#d95f41"></rect>
+  <text x="350" y="60" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="28" font-weight="700" fill="#d95f41">02</text>
+  <text x="350" y="90" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="13" font-weight="700" fill="#111">Why this solution</text>
+  <text x="350" y="108" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="13" font-weight="700" fill="#111">over another?</text>
+  <text x="350" y="135" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="11" fill="#888">Justify the path taken,</text>
+  <text x="350" y="151" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="11" fill="#888">consider simpler ones</text>
+  <!-- Card 3 -->
+  <rect x="480" y="20" width="200" height="160" rx="8" fill="#f5f5f5" stroke="#e8e8e8" stroke-width="1.5"></rect>
+  <rect x="480" y="20" width="200" height="6" rx="8" fill="#d95f41"></rect>
+  <text x="580" y="60" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="28" font-weight="700" fill="#d95f41">03</text>
+  <text x="580" y="90" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="13" font-weight="700" fill="#111">Does this align with</text>
+  <text x="580" y="108" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="13" font-weight="700" fill="#111">long-term goals?</text>
+  <text x="580" y="135" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="11" fill="#888">Solve for today without</text>
+  <text x="580" y="151" text-anchor="middle" font-family="&#x27;Inter&#x27;, sans-serif" font-size="11" fill="#888">creating tomorrow's mess</text>
+</svg>
+<figcaption style="text-align:center;font-size:0.82rem;color:#888;margin-top:0.75rem;font-style:italic;">Three questions to run against almost any architectural decision</figcaption>
+</figure>
+<p>Nothing in architecture is free. The first question forces the conversation about cost. The second keeps teams honest about the simpler path they might be skipping. The third is the one most often skipped under deadline pressure, and the one most likely to cause regret eighteen months later.</p>
+<h2 id="soft-opinions-strong-questions">Soft Opinions, Strong Questions</h2>
+<p>The most important thing I have learned is that architecture boils down to being better at asking these questions without forming hard, inflexible opinions on everything.</p>
+<blockquote>
+<p>If you enter a room with your mind already made up, you are not architecting. You are dictating.</p>
+</blockquote>
+<p>True architecture happens in the space between the questions. It is the process of listening to developers, stakeholders, and users, then synthesizing those needs into something simpler and more manageable.</p>
+<p>The best architectural decisions I have seen did not come from the smartest person in the room having a breakthrough. They came from someone asking a question that reframed the problem entirely. That is the skill worth developing.</p>
+<hr>
+<p>Next time someone approaches you with a “complex” problem, resist reaching for a whiteboard marker first. Reach for a question instead. You might find the architecture solves itself just by getting everyone on the same page.</p> </div> <div class="comments" data-astro-cid-gjtny2mx> <script src="https://giscus.app/client.js" data-repo="udantha/stdout.udantha.com" data-repo-id="R_kgDOSiVczA" data-category="General" data-category-id="DIC_kwDOSiVczM4C9b0w" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="https://stdout.udantha.com/giscus-theme.css" data-lang="en" crossorigin="anonymous" async>
+      </script> </div> </article>  </main> <footer data-astro-cid-37fxchfa> <div class="footer-inner" data-astro-cid-37fxchfa> <a href="https://udantha.com" data-astro-cid-37fxchfa>Udantha Pathirana</a> <div class="footer-links" data-astro-cid-37fxchfa> <a href="https://www.linkedin.com/in/udantha/" data-astro-cid-37fxchfa>LinkedIn</a> <a href="https://www.instagram.com/udantha" data-astro-cid-37fxchfa>@udantha</a> </div> </div> </footer> <div id="consent-banner" data-astro-cid-2effgw6e> <p data-astro-cid-2effgw6e>This site uses cookies to understand how it's used. <a href="/about" data-astro-cid-2effgw6e>About</a></p> <div class="consent-actions" data-astro-cid-2effgw6e> <button id="consent-decline" data-astro-cid-2effgw6e>Decline</button> <button id="consent-dismiss" data-astro-cid-2effgw6e>Got it</button> </div> </div> <script>
+  (function () {
+    var COOKIE = 'gtm_consent';
+    var DOMAIN = '.udantha.com';
+    var YEAR = 60 * 60 * 24 * 365;
+
+    function getCookie(name) {
+      var m = document.cookie.match('(^|;)\\s*' + name + '=([^;]+)');
+      return m ? m[2] : null;
+    }
+    function setCookie(name, value) {
+      document.cookie = name + '=' + value + '; max-age=' + YEAR + '; domain=' + DOMAIN + '; path=/; SameSite=Lax';
+    }
+
+    var banner = document.getElementById('consent-banner');
+    if (getCookie(COOKIE)) { banner.style.display = 'none'; return; }
+    banner.style.display = 'flex';
+
+    document.getElementById('consent-dismiss').addEventListener('click', function () {
+      setCookie(COOKIE, 'granted');
+      banner.style.display = 'none';
+    });
+
+    document.getElementById('consent-decline').addEventListener('click', function () {
+      setCookie(COOKIE, 'denied');
+      gtag('consent', 'update', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+      });
+      banner.style.display = 'none';
+    });
+  })();
+</script>  </body></html> 
